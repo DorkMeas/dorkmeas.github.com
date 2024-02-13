@@ -1,173 +1,525 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Dork Meas</title>
-  <link rel="icon" href="images/My_Logo.jpg">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thorm Chantha</title>
+  <link rel="icon" href="assets/images/logo-top.png">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300&family=Suwannaphum:wght@300&display=swap"
-    rel="stylesheet">
-  <style>
-    body,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    i,
-    b {
-      font-family: 'Suwannaphum', serif;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="w3-light-grey">
+<body id="top">
 
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-    <!-- The Grid -->
-    <div class="w3-row-padding">
+  <!-- 
+    - #HEADER
+  -->
 
-      <!-- Left Column -->
-      <div class="w3-third">
+  <header class="active" data-header>
+    <div class="container">
 
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <img src="images/My_Photo.jpg" style="width:100%">
-            <div class="w3-display-bottomleft w3-container w3-text-black">
-              <h2 style="color: mediumseagreen;">Dork Meas</h2>
+      <!-- 
+        - overlay
+      -->
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/hero-title.png" alt="logo" style="width: 80px ">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link">ទំព័រដើម</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#podcast" class="navbar-link">ពុម្ពអក្សរ</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">ទំនាក់ទំនង</a>
+          </li>
+          <!-- របា -->
+        </ul>
+
+        <div class="navbar-actions">
+
+          <button class="navbar-btn">
+
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+          <!-- ជាវ -->
+          <span>ជាវ</span>
+          </button>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <img src="./assets/images/hero-title.png" alt="Podcast" class="hero-title">
+
+          <p class="hero-text">
+            យើងខ្ញុំធ្វើពុម្ពអក្សរនេះឡើងក្នុងគោលបំណងរក្សា និងលើកតម្កើននូវអក្សរជាតិ​
+            ព្រមដោយការចែករំលែកនូវស្នាដៃផ្សេងៗដើម្បីជាប្រយោជន៍សម្រាប់បងប្អូនយកទៅប្រើប្រាស់ក្នុងការងារប្រចាំថ្ងៃ ។
+          </p>
+
+          <div class="hero-btn-group">
+
+            <button class="btn btn-primary">
+              <!-- <ion-icon name=""></ion-icon> -->
+
+              <span>ទំនាក់ទំនង</span>
+            </button>
+
+            <div class="btn-link-wrapper">
+
+              <p class="btn-title">បន្ថែម:</p>
+
+              <a href="#" class="btn-link">
+                <span>Facebook</span>
+              </a>
+
+              <a href="#" class="btn-link">
+                <span>Telegram</span>
+              </a>
+
             </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full-Stack Developer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Phnom Penh, KH</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>dorkmeas@gmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0 966 528 781</p>
-            <hr>
 
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>ជំនាញ</b></p>
-            <p>អភិវឌ្ឍន៍​គេហទំព័រ</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-            </div>
-            <p>អភិវឌ្ឍន៍​កម្មវិធី</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                <div class="w3-center w3-text-white">80%</div>
-              </div>
-            </div>
-            <p>បណ្តាញ</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-            </div>
-            <p>រចនា</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-            </div>
-            <br>
+          </div>
 
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>ភាសា</b>
-            </p>
-            <p>ភាសាខ្មែរ</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-            </div>
-            <p>ភាសាអង់គ្លេស</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-            </div>
-            <p>ភាសាថៃ</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-            </div>
-            <br>
-          </div>
-        </div><br>
-
-        <!-- End Left Column -->
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-
-        <!-- <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
-                class="w3-tag w3-teal w3-round">Current</span></h6>
-            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-          </div>
-        </div> -->
-
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ការអប់រំ</h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>គ្រប់វិស័យ</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>បច្ចុប្បន្ន</h6>
-            <p>ស្វ័យសិក្សា</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>ទុតិយភូមិ</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>២០២០​ - ២០២១</h6>
-            <p>ទទួលបាន សញ្ញាបត្រទុតិយភូមិ​ ( បាក់ឌុប​ )</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>បឋមភូមិ</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>២០១៧ - ២០២០</h6>
-            <p>ទទួលបាន​ សញ្ញាបត្របឋមភូមិ​ ( ឌឹប្លូម )</p><br>
-          </div>
         </div>
 
-        <!-- End Right Column -->
-      </div>
+        <div class="hero-banner"></div>
 
-      <!-- End Grid -->
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PODCAST
+      -->
+
+      <section class="podcast" id="podcast">
+        <ul class="podcast-list">
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/fonts.jpg" alt="FONT">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="download"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="#">04/02/2024</time>
+
+                  <p class="pod-epi">ID: 001</p>
+                </div>
+
+                <h3 class="h3 card-title">Akhara Friday Alone</h3>
+              </div>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="newsletter">
+        <div class="newsletter-card">
+
+          <div class="card-content">
+            <h3 class="h3 card-title">ទំនាក់ទំនងមកកាន់ក្រុមការងាររបស់យើងខ្ញុំដើម្បីដើម្បីទទួលបានពុម្ភអក្សរថ្មីៗ
+              ដែលមានតម្លៃសមរម្យ់់់់​ 🙏💕</h3>
+
+            <p class="card-text">
+              យើងខ្្ញុំពិតជាអរគុណយ៉ាងក្រៃលែងប្រសិនបើអ្នកបានទំនាក់ទំនងមកកាន់ក្រុមការងាររបស់យើង
+              ព្រោះការជាវរបស់អ្នកអាចជួយយើងក្នុងការអភិវឌ្ឍនូវស្នាដៃថ្មីៗ និងកាន់តែប្រសើឡើង
+              ព្រមទាំងអាចជួយឲ្យអក្សរជាតិរបស់យើងកាន់រីកចម្រើនទៅមុខជានិរន្តិ៍​។
+            </p>
+          </div>
+
+          <form action="" class="card-form" data-form>
+
+            <a href="https://t.me/ThornChantha">
+              <img src="assets/images/telegram.png" alt="telegram" style="width: 250px;">
+            </a>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo.png" alt="logo" style="width: 80px;">
+          </a>
+
+          <p class="footer-text">
+            យើងខ្ញុំធ្វើពុម្ពអក្សរនេះឡើងក្នុងគោលបំណងរក្សា និងលើកតម្កើននូវអក្សរជាតិ​
+            ព្រមដោយការចែករំលែកនូវស្នាដៃផ្សេងៗដើម្បីជាប្រយោជន៍សម្រាប់បងប្អូនយកទៅប្រើប្រាស់ក្នុងការងារប្រចាំថ្ងៃ ។
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-link-title">Start A Conversation</p>
+          </li>
+
+          <li>
+            <a href="mailto:hello@micro.com" class="footer-link">Thornchantha1221@gmail.com</a>
+          </li>
+
+          <li>
+            <a href="tel:+0123454678" class="footer-link">0979620712</a>
+          </li>
+
+          <li>
+            <a href="tel:+15780346789" class="footer-link">081576907</a>
+          </li>
+
+        </ul>
+
+        <div class="social-list-box">
+
+          <p class="social-title">Follow Us On:</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
     </div>
 
-    <!-- End Page Container -->
-  </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          <a href="https://t.me/dorkmeas">Developer</a> | &copy; 2024 <a href="https://t.me/ThornChantha">Thorm Chantha</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
 
-  <footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>បណ្តាញសង្គម</p>
-    <a href="https://www.facebook.com/bro.drama.10?mibextid=ZbWKwL">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    </a>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p>រក្សាសិទ្ធគ្រប់យ៉ាងដោយ © <a href="https://t.me/dorkmeas" target="_blank">ដោក​ មាស</a></p>
-    <p>ព.ស.២៥៦៧​ គ.ស.២០២៣</p>
   </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
